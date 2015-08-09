@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title></title>
+    <script src="dist/jquery/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="dist/kendo/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="dist/kendo/styles/kendo.material.min.css" />
+
+    <script src="/dist/kendo/js/jszip.min.js"></script>
+    <script src="dist/kendo/js/kendo.all.min.js"></script>
+
+</head>
+<body>
+    <script src="dist/Script/ship.js" type="text/javascript"></script>
+
+    <div id="example">
+        <div id="grid"></div>
+
+        <script>
+
+
+
+                $(document).ready(function () {
+                    var dataSource = new kendo.data.DataSource({
+                        pageSize: 20,
+                        data: Ships,
+                        autoSync: true,
+                    });
+
+
+
+                    $("#grid").kendoGrid({
+               toolbar: ["excel","pdf"],
+            excel: {
+                fileName: "ship.xlsx",
+                proxyURL: "//demos.telerik.com/kendo-ui/service/export",
+                filterable: true
+            },
+            pdf: {
+
+                fileName: "Ship.pdf",
+                proxyURL: "//demos.telerik.com/kendo-ui/service/export"
+            },
+                     dataSource: dataSource,
+                        schema: {
+                            model: {
+                                id: "ShipId",
+                                fields: {
+                                    ShipDate: { editable: false, nullable: true },
+                                    Ship_Heading: { validation: { required: true }
+
+									},
+
+                                }
+                            }
+
+                        },
+						filterable: true,
+                        groupable: true,
+                        pageable: true,
+                        height: 740,
+						sortable: true,
+						pageable: true,
+						groupable: true,
+						filterable: true,
+						columnMenu: true,
+						reorderable: true,
+						resizable: true,
+
+                        columns: [
+                            { field: "shipDate", width: "70px", title: "ShipDate" },
+                            { field: "Ship_Heading", width: "30px",  title: "Category" },
+                            { field: "Ship_Speed_gps", width: "30px", title: "Unit Price", format: "{0:c}", width: "30px" },
+                            { field: "Wind_Dir", width: "30px", title: "Date" },
+                            { field: "Wind_Speed", width: "30px", title: "Wind_Speed" },
+                            { field: "Wind_Speed_abs", width: "30px", title: "Wind_Speed_abs" },
+                            { field: "Rudder_order1", width: "30px", title: "Rudder_order1" },
+                            { field: "Rudder_APT1", width: "30px", title: "Rudder_APT1" },
+                            { field: "Water_Depth", width: "30px", title: "Water_Depth" },
+                            { field: "Depth_below_tr", width: "30px", title: "Depth_below_tr" },
+                            { field: "Sea_Water_Temp", width: "30px", title: "Sea_Water_Temp" },
+                            { field: "Draft_Aft", width: "30px", title: "Draft_Aft" },
+                            { field: "Draft_Fwd", width: "30px", title: "Draft_Fwd" },
+                            { field: "Flow_meter", width: "30px", title: "Flow_meter" },
+                            { field: "Flow_mete_acc", width: "30px", title: "Flow_mete_acc" },
+                            { field: "Shaft_Torque", width: "30px", title: "Shaft_Torque" },
+                            { field: "Shaft_Speed", width: "30px", title: "Shaft_Speed" },
+                            { field: "Shaft_Power", width: "30px", title: "Shaft_Power" },
+                            { field: "Latitude_v", width: "30px", title: "Latitude_v" },
+                            { field: "Latitude_d", width: "30px", title: "Latitude_d" },
+                            { field: "Longitude_v", width: "30px", title: "Longitude_v" },
+                            { field: "Longitude_d", width: "30px", title: "Longitude_d" }
+                        ],
+						editable: true
+                    });
+                });
+        </script>
+    </div>
+
+
+</body>
+</html>

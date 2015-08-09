@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <style>
+        html {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title></title>
+
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css" />
+
+    <base href="http://demos.telerik.com/kendo-ui/treeview/index">
+    
+    <link rel="stylesheet" href="dist/styles/kendo.common-material.core.min.css" />
+    <link rel="stylesheet" href="dist/styles/kendo.material.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2015.1.429/js/kendo.all.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.rtl.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.default.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.dataviz.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.dataviz.default.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.mobile.all.min.css">
+    <script src="http://cdn.kendostatic.com/2015.1.429/js/angular.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2015.1.429/js/jszip.min.js"></script>
+</head>
+<body>
+
+    <div id="example">
+        <div class="demo-section k-header">
+            <ul id="treeview">
+                <li data-expanded="true">
+                    <span><i class="sign out icon"></i></span>
+                    My Web Site
+                    <ul>
+                        <li data-expanded="true">
+                            <span class="k-sprite folder"></span>images
+                            <ul>
+                                <li><span><i class="icon sign out"></i></span>logo.png</li>
+                                <li><span class="k-sprite image"></span>body-back.png</li>
+                                <li><span class="k-sprite image"></span>my-photo.jpg</li>
+                            </ul>
+                        </li>
+                        <li data-expanded="true">
+                            <span class="k-sprite folder"></span>resources
+                            <ul>
+                                <li data-expanded="true">
+                                    <span class="k-sprite folder"></span>pdf
+                                    <ul>
+                                        <li><span class="k-sprite pdf"></span>brochure.pdf</li>
+                                        <li><span class="k-sprite pdf"></span>prices.pdf</li>
+                                    </ul>
+                                </li>
+                                <li><span class="k-sprite folder"></span>zip</li>
+                            </ul>
+                        </li>
+                        <li><span class="k-sprite html"></span>about.html</li>
+                        <li><span class="k-sprite html"></span>contacts.html</li>
+                        <li><span class="k-sprite html"></span>index.html</li>
+                        <li><span class="k-sprite html"></span>portfolio.html</li>
+                        <li><span class="k-sprite html"></span>about.html</li>
+                        <li><span class="k-sprite html"></span>contacts.html</li>
+                        <li><span class="k-sprite html"></span>index.html</li>
+                        <li><span class="k-sprite html"></span>portfolio.html</li>
+                        <li><span class="k-sprite html"></span>about.html</li>
+                        <li><span class="k-sprite html"></span>contacts.html</li>
+                        <li><span class="k-sprite html"></span>index.html</li>
+                        <li><span class="k-sprite html"></span>portfolio.html</li>
+                        <li><span class="k-sprite html"></span>about.html</li>
+                        <li><span class="k-sprite html"></span>contacts.html</li>
+                        <li><span class="k-sprite html"></span>index.html</li>
+                        <li><span class="k-sprite html"></span>portfolio.html</li>
+                        <li><span class="k-sprite html"></span>about.html</li>
+                        <li><span class="k-sprite html"></span>contacts.html</li>
+                        <li><span class="k-sprite html"></span>index.html</li>
+                        <li><span class="k-sprite html"></span>portfolio.html</li>
+                        <li><span class="k-sprite html"></span>about.html</li>
+                        <li><span class="k-sprite html"></span>contacts.html</li>
+                        <li><span class="k-sprite html"></span>index.html</li>
+                        <li><span class="k-sprite html"></span>end</li>                   
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $("#treeview").kendoTreeView();
+            });
+        </script>
+
+        <style>
+            #treeview .k-sprite {
+                background-image: url("../content/web/treeview/coloricons-sprite.png");
+            }
+
+            .rootfolder {
+                background-position: 0 0;
+            }
+
+            .folder {
+                background-position: 0 -16px;
+            }
+
+            .pdf {
+                background-position: 0 -32px;
+            }
+
+            .html {
+                background-position: 0 -48px;
+            }
+
+            .image {
+                background-position: 0 -64px;
+            }
+        </style>
+    </div>
+
+
+
+</body>
+</html>

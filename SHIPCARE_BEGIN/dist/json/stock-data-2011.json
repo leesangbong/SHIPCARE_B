@@ -1,0 +1,183 @@
+[
+  {
+    "date": "08/07/2015",
+    "close": 13.8,
+    "open": 13.0,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 15.5,
+    "open": 13.5,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 17.5,
+    "open": 14.0,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 19.6,
+    "open": 14.5,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 21.8,
+    "open": 15.0,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 24.2,
+    "open": 15.5,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 26.7,
+    "open": 16.0,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 29.5,
+    "open": 16.5,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 32.4,
+    "open": 17.0,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 35.5,
+    "open": 17.5,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 39.0,
+    "open": 18.0,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 42.7,
+    "open": 18.5,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 46.9,
+    "open": 19.0,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 51.7,
+    "open": 19.5,
+    "symbol": "Sea Trial"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 57.2,
+    "open": 20.0,
+    "symbol": "Sea Trial"
+  },
+
+  {
+    "date": "08/07/2015",
+    "close": 16.0,
+    "open": 13.0,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 18.1,
+    "open": 13.5,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 20.3,
+    "open": 14.0,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 22.7,
+    "open": 14.5,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 25.3,
+    "open": 15.0,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 28.1,
+    "open": 15.5,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 31.1,
+    "open": 16.0,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 34.2,
+    "open": 16.5,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 37.6,
+    "open": 17.0,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 41.3,
+    "open": 17.5,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 45.3,
+    "open": 18.0,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 49.7,
+    "open": 18.5,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 54.5,
+    "open": 19.0,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 60.0,
+    "open": 19.5,
+    "symbol": "Current"
+  },
+  {
+    "date": "08/07/2015",
+    "close": 66.4,
+    "open": 20.0,
+    "symbol": "Current"
+  }
+]

@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+
+    <!-- js css primary-->
+    <script src="dist/jquery/jquery-2.1.4.min.js"></script>
+    <script src="dist/semantic/semantic.min.js"></script>
+    <link rel="stylesheet" href="dist/semantic/semantic.min.css" />
+    <!-- js css primary End-->
+    <!-- js css secondary-->
+    <script src="dist/Script/ShipInput_load.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/Styles/ShipInput.css" />
+    <!-- js css secondary End-->
+
+    <!--<style>
+          #grid {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>-->
+
+
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="ui top fixed menu" style="background-color:lightgrey; height:30px;">
+        <!-- Topnav -->
+        <a name="input_topnav" href="ShipParticularInput_TestPage.html" class="item active current"><i class="info icon"></i></a>
+        <a name="input_topnav" href="ShopTestDataInput_TestPage1.html" class="item"><i class="setting icon"></i></a>
+        <a name="input_topnav" href="SEA-TRIALDataInput_TestPage1.html" class="item"><i class="flag icon"></i></a>
+        <a name="input_topnav" href="ShipKendo.html" class="item"><i class="paste icon"></i></a>
+        <a name="input_topnav" href="ShipKendo.html" class="item"><i class="comments outline icon"></i></a>
+        <a name="input_topnav" href="ShipKendo.html" class="item"><i class="cloud download icon"></i></a>
+        <!-- Topnav End-->
+
+        <div id="ShipInput_right_menu" class="right menu">
+            <a id="modal_input" class="item"><i class="write icon"></i></a>
+            <a class="item"><i class="save icon"></i></a>
+            <a class="item"><i class="trash icon"></i></a>
+        </div>
+    </header>
+    <!-- Header End-->
+    <!-- center -->
+    <div id="inputcenter_primary" style="width:100%;">
+        <div id="inputcenter_secondary" style="width:100%;">
+
+          
+        </div>
+    </div>
+    <!-- center End-->
+    <!-- modal Input -->
+    <!-- first modal -->
+    <div id="first_modal" class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">
+            SHIP GENERAL
+        </div>
+        <div class="image content" style="height:415px;">
+            <div class="ui medium image" style="position:relative; bottom:10px; right:7px;">
+                <!--<img src="dist/images/ship_particular/particular_pic_1.jpg">-->
+            </div>
+            <div class="description" style="position:relative; right:180px;">
+                <p>SHIP NAME </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="1" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>SHIP OWNER </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="2" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>VESSEL TYPE </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="3" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>YARD </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="4" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>IMO No. </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="5" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>E-mail </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="6" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui buttons">
+                <div id="first_modal_Closebtn" class="ui black deny button">
+                    <i class="remove icon"></i>
+                    Close
+                </div>
+            </div>
+            <div class="ui buttons">
+                <div id="first_modal_Nextbtn" class="ui positive right labeled icon button">
+                    Next
+                    <i class="angle right icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- second modal -->
+    <div id="second_modal" class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">
+            HULL
+        </div>
+        <div class="image content" style="height:415px;">
+            <div class="ui medium image" style="position:relative; bottom:10px; right:7px;">
+                <!--<img src="dist/images/ship_particular/particular_pic_2.jpg">-->
+            </div>
+            <div class="description" style="position:relative; right:180px;">
+                <p>L.O.P </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="7" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>L.B.P </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="8" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>BREADTH </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="9" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>DEAD WEIGHT </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="10" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>DISPLACEMENT </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="11" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>DRAFT </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="12" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui buttons">
+                <div id="second_modal_backbtn" class="ui red left labeled icon button">
+                    <i class="angle left icon"></i>
+                    Back
+                </div>
+            </div>
+            <div class="ui buttons">
+                <div id="second_modal_Nextbtn" class="ui positive right labeled icon button">
+                    <i class="angle right icon"></i>
+                    Next
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- third modal -->
+    <div id="third_modal" class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">
+            ENGINE
+        </div>
+        <div class="image content" style="height:415px;">
+            <div class="ui medium image" style="position:relative; bottom:10px; right:7px;">
+                <!--<img src="dist/images/ship_particular/particular_pic_3.jpg">-->
+            </div>
+            <div class="description" style="position:relative; right:180px;">
+                <p>M/E TYPE </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="13" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>POWER at MCR </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="14" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>RPM at MCR </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="15" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>PP PITCH </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="16" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>G/E TPYE </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="17" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+                <p>BLR TYPE </p>
+                <div class="ui icon input">
+                    <input class="Ship_General_input" name="18" type="text" placeholder="Input"><i class="write icon"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui buttons">
+                <div id="third_modal_backbtn" class="ui red left labeled icon button">
+                    <i class="angle left icon"></i>
+                    Back
+                </div>
+            </div>
+            <div class="ui buttons">
+                <div id="third_modal_yesbtn" class="ui positive right labeled icon button">
+                    <i class="checkmark icon"></i>
+                    Yes
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Input save -->
+    <div id="save_modal" class="ui modal" style="position:absolute; left:57%; width:580px;">
+        <i class="close icon"></i>
+        <div class="header">
+            Do You Want To Save Your Input ?
+        </div>
+        <div id="save_modal_psw" class="image content">
+            <!--<div class="ui medium image">
+                <img src="dist/images/ship_particular/particular_pic_4.jpg">
+            </div>-->
+            <div class="description">
+                <div class="ui segment">
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i>
+                        <input type="password" name="ship_input_pwd" placeholder="password" style="width:195px;">
+                    </div>
+                    <div class="ui left icon input">
+                        <div class="ui selection dropdown">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">수정사유</div>
+                            <div  class="menu">
+                                <div class="item" data-value="0">신규입력</div>
+                                <div class="item" data-value="1">가</div>
+                                <div class="item" data-value="2">나</div>
+                                <div class="item" data-value="3">다</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="okbtn" class="ui basic button"> 확인 </button>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <div id="save_modal_closebtn" class="ui black deny button">
+                Close
+            </div>
+            <div class="ui buttons">
+                <div id="save_modal_backbtn" class="ui red left labeled icon button">
+                    <i class="angle left icon"></i>
+                    Back
+                </div>
+            </div>
+            <div class="ui buttons">
+                <div id="save_modal_yesbtn" onclick="addtableLine();" class="ui positive right labeled icon button">
+                    Yes
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Input save End-->
+
+    <!-- Forgot Your Password -->
+    <div id="pwd" class="ui modal"  style="position:absolute; left:57%; width:580px;">
+        <div class="header">
+            Forgot Your Password?
+        </div>
+        <div class="actions">
+            <div class="ui buttons">
+                <div id="pwd_backbtn" class="ui black left labeled icon button">
+                    <i class="angle left icon"></i>
+                    Back
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Forgot Your Password End-->
+
+    <!-- modal Input End-->
+
+    <script>
+        $(function () {
+            $(".ui.left.icon.input").click(function () {
+                $(".ui.dropdown").dropdown().show();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

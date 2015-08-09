@@ -1,0 +1,21 @@
+﻿/* position */
+#inputcenter_secondary{
+    position:absolute;
+    width:100%;
+    top:30px;
+
+}
+
+/* modal Input Position */
+.description > .ui.icon.input{
+    position:relative;
+    left:110px;
+    top:-42px;
+}
+
+#first_modal, #second_modal, #third_modal{
+    position:absolute;
+    left:57%;
+    width:677px;
+
+}

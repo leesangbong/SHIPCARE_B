@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!-- js css primary-->
+    <script src="dist/jquery/jquery-2.1.4.min.js"></script>
+    <script src="dist/semantic/semantic.min.js"></script>
+    <script src="dist/Script/login.js"></script>
+    <link rel="stylesheet" href="dist/semantic/semantic.css" />
+    <!-- js css primaryEnd-->
+
+    <!-- js css secondary-->
+    <link rel="stylesheet" type="text/css" href="dist/Styles/all_base.css" />
+    <!-- js css secondaryEnd-->
+
+    <script>
+        
+    </script>
+
+</head>
+<body>
+    <div style="background-color:black;">
+        <!-- background image -->
+        <img class="bg" src="dist/images/loginbgpic/back.jpg" alt="Not found" />
+        <!-- background image End-->
+    </div>
+    
+    <img   style="position:absolute;top:20px;left:20px;" src="/dist/images/MarineService.png">
+    
+    <!-- login -->
+
+
+        <div class="ui center aligned grid ">
+            <div class="row"   >
+                <div  class="column "  style="position:relative;top:150px;">
+
+                    <h1 class="ui header" style="color:white;margin:0;padding:0;">SHIP PERFORMANCE ANALYSIS</h1>
+                    <p style="color:white;">SHIPCARE SERVICE</p>
+                    </div> 
+                </div>
+            <!-- top(basic) or middle or bottom / aligned:top, aligend:left, grid:left_top -->
+            <div class="row">
+
+                <div id="column" class="column">
+
+
+                    <form id="login-failure" class="ui large left form">
+                        <!-- <div class="ui stacked segment">--> <!-- border white -->
+                        <div class="field">
+                            <div id="facebook_login" class="ui facebook submit button">
+                                <div class="ui small comments"><i class="facebook self icon"></i></div>
+                            </div>
+                            <div id="twitter_login" class="ui twitter submit button">
+                                <div class="ui small comments"><i class="twitter self icon"></i></div>
+                            </div>
+                            <div id="google_login" class="ui google plus submit button">
+                                <div class="ui small comments"><i class="google plus icon"></i></div>
+                            </div>
+
+                        </div>
+                        <div class="field">
+                            <div class="ui small comments">또는 이메일을 통해</div>
+                        </div>
+                        <div class="field">
+
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" id="email" placeholder="사용자 이름 또는 이메일">
+                            </div>
+                            <p></p>
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" id="password" placeholder="비밀번호">
+                            </div>
+
+                        </div>
+                        <div id="login" class="ui fluid large teal submit button"><div class="ui small comments">로그인</div></div>
+                        <!-- </div> -->
+                        <div class="ui error message"></div>
+                    </form>
+
+                    <div class="ui message">
+                        회원가입 안하셨나요? &nbsp;&nbsp;&nbsp; <a href="#">회원가입</a>
+                    </div>
+
+                    <div class="ui bigsmall comments"><a id="loginfailurelink" href="#"><u>사용자 이름이나 비밀번호를 잊으셨나요?</u></a></div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <div class="ui comments" style="color:white; position:absolute; right:30px;">
+                <a class="information" href="#">이용약관</a> / <a class="information" href="#">개인정보취급방침</a> / <a class="information" href="#">회사소개</a>
+            </div>
+        </div>
+        <!-- login End-->
+</body>
+</html>

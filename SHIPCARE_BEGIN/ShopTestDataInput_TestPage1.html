@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!-- js css primary-->
+    <script src="dist/jquery/jquery-2.1.4.min.js"></script>
+    <script src="dist/semantic/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic/semantic.min.css" />
+    <!-- js css primaryEnd-->
+</head>
+<body>
+    <!-- table start -->
+    <table class="ui striped table">
+        <thead>
+            <tr>
+                <th>TEST NO</th>
+                <th>LOAD %</th>
+                <th>POWER</th>
+                <th>RPM</th>
+                <th>Ambient<br />PREssure</th>
+                <th>Scav' air<br />Temp</th>
+                <th>Pmax</th>
+                <th>Pcomp</th>
+                <th>Pexh</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>25%</td>
+                <td>4215</td>
+                <td>57.3</td>
+                <td>1015.0</td>
+                <td>35.2</td>
+                <td>70.0</td>
+                <td>45.0</td>
+                <td>0.30</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>50%</td>
+                <td>8430</td>
+                <td>72.2</td>
+                <td>1015.0</td>
+                <td>35.1</td>
+                <td>99.3</td>
+                <td>73.5</td>
+                <td>0.95</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>75%</td>
+                <td>12645</td>
+                <td>82.7</td>
+                <td>1015.0</td>
+                <td>36.1</td>
+                <td>129.3</td>
+                <td>103.5</td>
+                <td>1.70</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>100%</td>
+                <td>16860</td>
+                <td>91.0</td>
+                <td>1015.0</td>
+                <td>37.1</td>
+                <td>139.8</td>
+                <td>127.5</td>
+                <td>2.40</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>100%</td>
+                <td>16860</td>
+                <td>91.1</td>
+                <td>1015.0</td>
+                <td>38.1</td>
+                <td>140.2</td>
+                <td>127.6</td>
+                <td>2.40</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>110%</td>
+                <td>18546</td>
+                <td>93.9</td>
+                <td>1015.0</td>
+                <td>38.1</td>
+                <td>140.0</td>
+                <td>138.3</td>
+                <td>2.70</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="ui header">
+        <div class="content">
+            CURVE FITTING - Fomular
+            <!--<div class="sub header">Check out our plug-in marketplace</div>-->
+        </div>
+    </h2>
+
+    <table class="ui striped table">
+        <tbody>
+            <tr>
+                <td>LOAD(%) TO RPM</td>
+                <td>a</td>
+                <td>b</td>
+                <td>-</td>
+                <td>-</td>
+                <td>R2</td>
+            </tr>
+            <tr>
+                <td>y = ax + b</td>
+                <td>16860</td>
+                <td>2.317</td>
+                <td>-</td>
+                <td>-</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>load(%) TO SFOC(ISO)</td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>R2</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table End -->
+</body>
+</html>

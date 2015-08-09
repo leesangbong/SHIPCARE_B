@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+
+    <!-- js css primary-->
+    <script src="dist/jquery/jquery-2.1.4.min.js"></script>
+    <script src="dist/semantic/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic/semantic.min.css" />
+    <!-- js css primary End -->
+    <!-- js css sub -->
+    <link rel="stylesheet" href="dist/kendo/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="dist/kendo/styles/kendo.default.min.css" />
+    <script src="dist/kendo/js/kendo.all.min.js"></script>
+    <!-- js css sub End-->
+
+    <link rel="stylesheet" type="text/css" href="dist/Styles/ReportingSystem.css" />
+</head>
+<body>
+    <table style="width:100%;">
+        <tr>
+            <td style="width:15%;"></td>
+            <td style="width:70%;">
+                <div class="ui container" style="width:100%;">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <table style="position:relative; top:2px;">
+                        <tr>
+                            <td style="font-size:17px;"><div class="ui teal header">SHIP CARE LITE <sup>TM</sup></div></td>
+                        </tr>
+                        <tr>
+                            <td><h4>Shipe Performance Analysis</h4></td>
+                        </tr>
+                    </table>
+
+                    <table align="right" style="position:relative; bottom:38px;">
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>
+                                Report : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px;">Draft(Mid) : </td>
+                            <td style="width:60px;"> 8.80 m </td>
+                            <td style="width:140px;">Report issuing date :</td>
+                            <td>2015-05-21</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="ui divider" style="background-color:cornflowerblue; border-top:3px solid rgba(34,36,38,.15); position:relative; bottom:5px;"></div>
+
+
+                <h2 align="center"> Speed-DFOC </h2>
+
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width:10%"><h4>F.O calorific value : </h4></td>
+                        <td style="width:20%"><h4>9625 Kcal/Kg</h4></td>
+                        <td style="width:10%"><h4>SFOC : </h4></td>
+                        <td style="width:20%"><h4>166.61g/kw/hr</h4></td>
+                        <td style="width:20%"><h4>Sea Margine : 15%</h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>선속저하(at 38.5MT) : </h4></td>
+                        <td><h4>0.82Kn</h4></td>
+                        <td><h4>FOC증가(at 17.4Knots) : </h4></td>
+                        <td><h4>8.08MT</h4></td>
+                        <td>
+                            <h4>
+                                필터 후 표본 : 45 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                필터 전 표본 : 69
+                            </h4>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="ui segment">
+                    <div id="example">
+                        <div class="demo-section k-content">
+                            <div id="chart_DFOC"></div>
+                        </div>
+
+                        <script>
+                            function createChart() {
+                                $("#chart_DFOC").kendoChart({
+                                    chartArea: {
+                                        height: 300,
+
+                                        margin: {
+                                            right: 20
+                                        }
+                                    }
+                                    ,
+                                    //title: {
+                                    //    text: "Charge current vs. charge time"
+                                    //},
+                                    legend: {
+                                        visible: true
+                                    },
+                                    seriesDefaults: {
+                                        markers: {
+                                            size: 6
+                                        },
+                                        scatterLine: {
+                                            width: 2
+                                        }
+                                    },
+                                    legend: {
+                                        position: "custom",
+                                        orientation: "vertical",
+                                        height: 10,
+                                        margin: {
+                                            top: 20,
+                                            left: 100
+                                        }
+                                    },
+                                    series: [{
+                                        name: "운전점",
+                                        type: "scatter",
+                                        data: [[13.5, 34], [13.7, 32], [15.1, 31], [15.3, 30], [15.5, 32], [15.7, 34], [16, 33], [16, 26], [16.3, 29], [16.5, 31], [16.7, 30], [16.7, 31], [16.7, 32], [16.8, 34], [17, 46], [17, 48], [17.4, 42], [17.5, 36], [17.6, 38], [17.6, 41], [17.8, 45], [17.9, 46], [18, 46], [18, 48], [18.1, 46], [18.1, 50], [18.2, 46], [18.2, 48], [18.2, 48.2], [18.2, 48.4], [18.3, 46.5], [18.3, 35], [18.4, 39], [18.4, 45], [18.4, 48], [18.5, 42], [18.7, 45], [18.7, 48], [18.8, 50], [19.2, 47], [19.3, 46], [19.3, 47], [19.4, 45], [19.5, 49]]
+                                    }, {
+                                        name: "현재",
+                                        type: "scatterLine",
+                                        data: [[13.0, 16.0], [13.5, 18.1], [14.0, 20.3], [14.5, 22.7], [15.0, 25.3], [15.5, 28.1], [16.0, 31.1], [16.5, 34.2], [17.0, 37.6], [17.5, 41.3], [18.0, 45.3], [18.5, 49.7], [19.0, 54.5], [19.5, 60.0], [20.0, 66.4]]
+                                    }, {
+                                        name: "Sea Trial",
+                                        type: "scatterLine",
+                                        data: [[13.0, 13.8], [13.5, 15.5], [14.0, 17.5], [14.5, 19.6], [15.0, 21.8], [15.5, 24.2], [16.0, 26.7], [16.5, 29.5], [17.0, 32.4], [17.5, 35.5], [18.0, 39.0], [18.5, 42.7], [19.0, 46.9], [19.5, 51.7], [20.0, 57.2]]
+                                    }, {
+                                        name: "평균운전점",
+                                        type: "scatter",
+                                        data: [[17.47, 40.8]],
+                                        markers: {
+                                            size: 13
+                                        },
+                                    }, {
+                                        name: "Basic",
+                                        type: "scatter",
+                                        data: [[13.0, 16.0], [13.5, 18.1], [14.0, 20.3], [14.5, 22.7], [15.0, 25.3], [15.5, 28.1], [16.0, 31.1], [16.5, 34.2], [17.0, 37.6], [17.5, 41.3], [18.0, 45.3], [18.5, 49.7], [19.0, 54.5], [19.5, 60.0], [20.0, 66.4]],
+                                        markers: {
+                                            size: 11
+                                        },
+                                    }],
+                                    xAxis: {
+                                        min: 13,
+                                        max: 20,
+
+                                        labels: {
+                                            format: "{0}"
+                                        },
+                                        title: {
+                                            text: "Speed"
+                                        }
+                                    },
+                                    yAxis: {
+                                        max: 70,
+                                        labels: {
+                                            format: "{0}"
+                                        },
+                                        title: {
+                                            text: "DFOC"
+                                        }
+                                    },
+                                    tooltip: {
+                                        visible: true,
+                                        format: "{0}%",
+                                        template: "DFOC : #= value.y  +' / ' + series.name #: #= value.x #"
+                                    }
+                                });
+                            }
+
+
+                            $(document).ready(createChart);
+                            $(document).bind("kendo:skinChange", createChart);
+                            $(window).on("resize", function () {
+                                kendo.resize($("#chart_DFOC"));
+                            });  //반응형
+                        </script>
+                    </div>
+                </div>
+
+                <table class="ui basic table">
+                    <tr align="center">
+                        <td colspan="2" style="background-color:#00B5AD; color:white;">Speed</td>
+                        <td>13.0</td>
+                        <td>13.5</td>
+                        <td>14.0</td>
+                        <td>14.5</td>
+                        <td>15.0</td>
+                        <td>15.5</td>
+                        <td>16.0</td>
+                        <td>16.5</td>
+                        <td>17.0</td>
+                        <td>17.5</td>
+                        <td>18.0</td>
+                        <td>18.5</td>
+                        <td>19.0</td>
+                        <td>19.5</td>
+                        <td>20.0</td>
+                    </tr>
+                    <tr align="center">
+                        <td rowspan="3" style="background-color:#00B5AD; color:white;">DFOC</td>
+                        <td>Sea Trial</td>
+                        <td>13.8</td>
+                        <td>15.5</td>
+                        <td>17.5</td>
+                        <td>19.6</td>
+                        <td>21.8</td>
+                        <td>24.2</td>
+                        <td>26.7</td>
+                        <td>29.5</td>
+                        <td>32.4</td>
+                        <td>35.5</td>
+                        <td>39.0</td>
+                        <td>42.7</td>
+                        <td>46.9</td>
+                        <td>51.7</td>
+                        <td>57.2</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Basic</td>
+                        <td>16.0</td>
+                        <td>18.1</td>
+                        <td>20.3</td>
+                        <td>22.7</td>
+                        <td>25.3</td>
+                        <td>28.1</td>
+                        <td>31.1</td>
+                        <td>34.2</td>
+                        <td>37.6</td>
+                        <td>41.3</td>
+                        <td>45.3</td>
+                        <td>49.7</td>
+                        <td>54.5</td>
+                        <td>60.0</td>
+                        <td>66.4</td>
+                    </tr>
+                    <tr align="center" style="background-color:gainsboro;">
+                        <td>현재</td>
+                        <td>16.0</td>
+                        <td>18.1</td>
+                        <td>20.3</td>
+                        <td>22.7</td>
+                        <td>25.3</td>
+                        <td>28.1</td>
+                        <td>31.1</td>
+                        <td>34.2</td>
+                        <td>37.6</td>
+                        <td>41.3</td>
+                        <td>45.3</td>
+                        <td>49.7</td>
+                        <td>54.5</td>
+                        <td>60.0</td>
+                        <td>66.4</td>
+                    </tr>
+
+                </table>
+                <div>
+                    ○ Speed-FOC 곡선은 Sea-Trial, Basic 대비 동일 선속 추진을 위한 DFOC 소모량을 나타냅니다.
+                </div>
+
+                <h2 align="center"> Speed-RPM </h2>
+                <div class="ui segment">
+                    <div id="example">
+                        <div class="demo-section k-content">
+                            <div id="chart_RPM"></div>
+                        </div>
+
+                        <script>
+                            function createChart() {
+                                $("#chart_RPM").kendoChart({
+                                    chartArea: {
+                                        height: 300,
+                                    },
+                                    //title: {
+                                    //    text: "Charge current vs. charge time"
+                                    //},
+                                    legend: {
+                                        visible: true
+                                    },
+                                    seriesDefaults: {
+                                        markers: {
+                                            size: 6
+                                        },
+                                        scatterLine: {
+                                            width: 2
+                                        }
+                                    },
+                                    legend: {
+                                        position: "custom",
+                                        orientation: "vertical",
+                                        height: 10,
+                                        margin: {
+                                            top: 20,
+                                            left: 100
+                                        }
+                                    },
+                                    series: [{
+                                        name: "운전점",
+                                        type: "scatter",
+                                        data: [[13.4, 80], [13.7, 79.8], [15.2, 84], [15.3, 83], [15.5, 83], [15.7, 85], [16, 85], [16, 81], [16.3, 84], [16.5, 83.5], [16.7, 83.5], [16.7, 85], [16.7, 85], [17, 96], [17.3, 91], [17.5, 90], [17.6, 92], [17.6, 94], [17.8, 97], [17.9, 98], [18, 90], [18, 97.5], [18.1, 97.6], [18.1, 97.7], [18.2, 97.7], [18.2, 98], [18.2, 98.5], [18.3, 99], [18.3, 88], [18.4, 94], [18.4, 95], [18.4, 98], [18.5, 92], [18.7, 98], [18.9, 98], [19.2, 98.5], [19.3, 97], [19.3, 97.4], [19.4, 97.5], [19., 97.5]]
+                                    }, {
+                                        name: "현재",
+                                        type: "scatterLine",
+                                        data: [[13.0, 68.5], [13.5, 71.1], [14.0, 73.8], [14.5, 76.4], [15.0, 79.0], [15.5, 81.7], [16.0, 84.3], [16.5, 86.9], [17.0, 89.6], [17.5, 92.2], [18.0, 94.8], [18.5, 97.5], [19.0, 100.1], [19.5, 102.7], [20.0, 105.4]]
+                                    }, {
+                                        name: "Sea Trial",
+                                        type: "scatterLine",
+                                        data: [[13.0, 67.3], [13.5, 69.8], [14.0, 72.4], [14.5, 75.0], [15.0, 77.6], [15.5, 80.2], [16.0, 82.8], [16.5, 85.4], [17.0, 87.9], [17.5, 90.5], [18.0, 93.1], [18.5, 95.7], [19.0, 98.3], [19.5, 100.9], [20.0, 103.5]]
+                                    }, {
+                                        name: "평균운전점",
+                                        type: "scatter",
+                                        data: [[17.47, 91.8]],
+                                        markers: {
+                                            size: 13
+                                        }
+                                    }],
+                                    xAxis: {
+                                        min: 13,
+                                        max: 20,
+
+                                        labels: {
+                                            format: "{0}"
+                                        },
+                                        title: {
+                                            text: "Speed"
+                                        }
+                                    },
+                                    yAxis: {
+                                        max: 110,
+                                        min: 60,
+                                        labels: {
+                                            format: "{0}"
+                                        },
+                                        title: {
+                                            text: "RPM"
+                                        }
+                                    },
+                                    tooltip: {
+                                        visible: true,
+                                        format: "{0}%",
+                                        template: "RPM : #= value.y  +' / ' + series.name #: #= value.x #"
+
+                                    }
+                                });
+                            }
+
+
+                            $(document).ready(createChart);
+                            $(document).bind("kendo:skinChange", createChart);
+                            $(window).on("resize", function () {
+                                kendo.resize($("#chart_RPM"));
+                            });  //반응형
+                        </script>
+                    </div>
+                </div>
+
+                <table class="ui basic table">
+                    <tr align="center">
+                        <td colspan="2" style="background-color:#00B5AD; color:white;">Speed</td>
+                        <td>13.0</td>
+                        <td>13.5</td>
+                        <td>14.0</td>
+                        <td>14.5</td>
+                        <td>15.0</td>
+                        <td>15.5</td>
+                        <td>16.0</td>
+                        <td>16.5</td>
+                        <td>17.0</td>
+                        <td>17.5</td>
+                        <td>18.0</td>
+                        <td>18.5</td>
+                        <td>19.0</td>
+                        <td>19.5</td>
+                        <td>20.0</td>
+                    </tr>
+                    <tr align="center">
+                        <td rowspan="2" style="background-color:#00B5AD; color:white;">RPM</td>
+                        <td>Sea Trial</td>
+                        <td>67.3</td>
+                        <td>69.8</td>
+                        <td>72.4</td>
+                        <td>75.0</td>
+                        <td>77.6</td>
+                        <td>80.2</td>
+                        <td>82.8</td>
+                        <td>85.4</td>
+                        <td>87.9</td>
+                        <td>90.5</td>
+                        <td>93.1</td>
+                        <td>95.7</td>
+                        <td>98.3</td>
+                        <td>100.9</td>
+                        <td>103.5</td>
+                    </tr>
+                    <tr align="center" style="background-color:gainsboro;">
+                        <td>현재</td>
+                        <td>68.5</td>
+                        <td>71.1</td>
+                        <td>73.8</td>
+                        <td>76.4</td>
+                        <td>79.0</td>
+                        <td>81.7</td>
+                        <td>84.3</td>
+                        <td>86.9</td>
+                        <td>89.6</td>
+                        <td>90.2</td>
+                        <td>94.8</td>
+                        <td>97.5</td>
+                        <td>100.1</td>
+                        <td>102.7</td>
+                        <td>105.4</td>
+                    </tr>
+
+                </table>
+            </td>
+            <td style="width:15%;"></td>
+    </table>
+
+</body>
+</html>
